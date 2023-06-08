@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Banregio</title>
+</head>
+
+<body>
+    <form action="/submit" method="POST">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="rfc" class="form-label">RFC:</label>
+            <input type="text" class="form-control" id="rfc" name="rfc">
+        </div>
+        <div class="mb-3">
+            <label for="nacimiento" class="form-label">Fecha de nacimiento:</label>
+            <input type="date" class="form-control" id="nacimiento" name="nacimiento">
+        </div>
+        <div class="mb-3">
+            <label for="impSoli" class="form-label">Importe a solicitar:</label>
+            <input type="number" class="form-control" id="impSoli" name="impSoli">
+        </div>
+        <div class="mb-3">
+            <label for="ingMensual" class="form-label">Ingresos mensuales:</label>
+            <input type="number" class="form-control" id="ingMensual" name="ingMensual">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
