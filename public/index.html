@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3">
             <label for="rfc" class="form-label">RFC:</label>
-            <input type="text" class="form-control" id="rfc" name="rfc">
+            <input type="text" maxlength="13" oninput="this.value = this.value.toUpperCase();" class="form-control" id="rfc" name="rfc">
         </div>
         <div class="mb-3">
             <label for="nacimiento" class="form-label">Fecha de nacimiento:</label>
@@ -35,8 +35,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-
+    
 </body>
-<script src="js/index.js"></script>
-
+<script src="../public/js/script.js"></script>
 </html>
